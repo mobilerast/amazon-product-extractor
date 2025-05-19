@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Product Extractor",
+  "version": "1.0",
+  "description": "Extract product details from Amazon product pages.",
+  "author": "mehmet.alp@rastmobile.com",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://www.amazon.*/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
